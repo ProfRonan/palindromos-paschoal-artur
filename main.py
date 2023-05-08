@@ -2,5 +2,9 @@
 
 
 def is_palindrome(string: str) -> bool:
-    """Check if string is palindrome."""
+    string.lower()
+    string.replace(" ", "")
+    string.replace("!", "")
+    if(string==string[::-1]):
+        return True
     return False
